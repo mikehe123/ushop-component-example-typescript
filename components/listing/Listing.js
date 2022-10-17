@@ -3,14 +3,10 @@ import ListingShifter from "@components/listing-shifter/ListingShifter";
 import { useState } from "react";
 import * as S from "./S.Listing";
 
-interface CardListingProps {
-  listingTitle: string;
-}
-
-const Listing: React.FC<CardListingProps> = ({ listingTitle }) => {
+const Listing = ({ listingTitle }) => {
   const [listItems, setListItems] = useState(placeHolderData);
 
-  const handleShift = (direction: number) => {
+  const handleShift = (direction) => {
     setListItems(
       listItems.slice(direction * 5).concat(listItems.slice(0, direction * 5))
     );
