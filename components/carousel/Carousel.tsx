@@ -4,11 +4,11 @@ import CarouselItem from "@components/carousel/CarouselItem";
 import { useState } from "react";
 import * as S from "./S.Carousel";
 
-interface Carousel {
+interface CarouselProps {
   listingTitle: string;
 }
 
-const Carousel: React.FC<Carousel> = ({ listingTitle }) => {
+const Carousel: React.FC<CarouselProps> = ({ listingTitle }) => {
   const [listItems, setListItems] = useState(placeHolderData);
 
   const handleShift = (direction: number) => {
