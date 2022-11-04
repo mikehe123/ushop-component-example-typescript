@@ -7,7 +7,7 @@ const nextConfig = {
     path: "",
   },
   assetPrefix: "",
-  basePath: "/ushop-component-example-typescript",
+  basePath: "",
 };
 
 export default nextConfig;
