@@ -10,8 +10,8 @@ const Footer: React.FC = () => {
   return (
     <S.Container>
       <S.ContainerContent>
-        {FooterData.map(({ title, links }) => (
-          <Section title={title} links={links} />
+        {FooterData.map(({ title, links }, index) => (
+          <Section title={title} links={links} key={title + index} />
         ))}
         {<SectionVariant title={"Subscribe"} />}
       </S.ContainerContent>
@@ -28,7 +28,7 @@ const Section: React.FC<SectionProps> = ({ title, links }) => {
   return (
     <S.ContainerSection>
       <S.TextBold>{title}</S.TextBold>
-      {links && links.map((link) => <S.Text>{link}</S.Text>)}
+      {links && links.map((link) => <S.Text key={title + link}>{link}</S.Text>)}
     </S.ContainerSection>
   );
 };
