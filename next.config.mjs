@@ -6,7 +6,7 @@ const nextConfig = {
     loader: "akamai",
     path: "",
   },
-  assetPrefix: "/ushop-component-example-typescript",
+  assetPrefix: "",
   basePath: "/ushop-component-example-typescript",
 };
 
