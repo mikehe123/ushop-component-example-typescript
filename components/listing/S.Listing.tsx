@@ -25,4 +25,5 @@ export const ContainerList = styled.div`
   flex-direction: row;
   justify-content: space-around;
   margin: 0 16px 0 16px;
+  gap: 16px;
 `;
