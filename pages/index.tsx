@@ -7,7 +7,7 @@ import NavBar from "@components/navbar/NavBar";
 const Home: NextPage = ({}) => {
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar/>
       <div className={styles.bannerBoard}>
         <Carousel listingTitle="Popular" />
       </div>

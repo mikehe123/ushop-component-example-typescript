@@ -15,12 +15,12 @@ const Links: React.FC<{ links: Link[] }> = ({ links }) => {
         <S.linksContainer>
             {links.map((link: Link) => {
                 return (
-                    <S.Links>
-                        {/* <a href={link.href}>
-                            {link.label}
-                        </a> */}
+                    // <S.Links>
+                        // <a href={link.href}>
+                        //     {link.label}
+                        // </a>
                         <S.Links>{link.label}</S.Links>
-                    </S.Links>
+                    /* </S.Links> */
                 )
             })}
         </S.linksContainer>
@@ -32,13 +32,13 @@ const Nav: React.FC<{}> = () => {
         <S.width100>
             <S.navbar_main>
                 <S.link_ushop>
-                    <a href=''>UShop</a>
+                    UShop
                 </S.link_ushop>
                 <S.link_main>
-                    <a href=''>About</a>
+                    About
                 </S.link_main>
                 <S.link_main>
-                    <a href=''>Help</a>
+                    Help
                 </S.link_main>
 
                 <S.buttonsContainer>
