@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.div<{ width: number }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 140px;
+  width: ${(props) => `${props.width}px`};
   height: 35px; /* what if text overflow? maybe can set different text size if button text is too long*/
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;

@@ -49,3 +49,5 @@ const placeHolderData = new Array(13).fill(0).map((_, index) => ({
   itemPrice: index + 1,
   itemCondition: "New",
 }));
+
+const LinksTarget = [{ destination: "/" }, { destination: "/search_page" }];

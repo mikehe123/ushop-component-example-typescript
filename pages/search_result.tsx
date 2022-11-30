@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import styles from "@styles/SearchResult.module.css";
 import ListingGrid from "@components/listing-grid/ListingGrid";
 
-const Home: NextPage = ({}) => {
+const SearchPage: NextPage = ({}) => {
   return (
     <>
       <div className={styles.bannerBoard}>
@@ -12,4 +12,4 @@ const Home: NextPage = ({}) => {
   );
 };
 
-export default Home;
+export default SearchPage;
