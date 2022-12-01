@@ -32,8 +32,8 @@ const CarouselItem: React.FC<CarouselItemProps> = ({
         </S.ItemDescription>
       </S.ContainerItemMid>
       <S.ContainerItemRight>
-        <Button buttonText={"View Item"} />
-        <Button buttonText={"Add to Cart"} />
+        <Button buttonText={"View Item"} width={140} />
+        <Button buttonText={"Add to Cart"} width={140} />
       </S.ContainerItemRight>
     </S.Container>
   );
