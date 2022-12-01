@@ -9,7 +9,7 @@ export const navbar_main = styled.div`
     position: relative;
     align-items: center;
     justify-content: right;
-    font-family: Lato;
+    font-family: "Baloo 2";
     overflow: hidden;
     float: left;
 `;
@@ -22,7 +22,7 @@ export const navbar = styled.div`
     position: relative;
     align-items: center;
     justify-content: center;
-    font-family: "Baloo 2";
+    font-family: "Lato";
 `;
 
 export const width100 = styled.div`
@@ -47,12 +47,13 @@ export const Links = styled.a`
 `;
 
 export const link_main = styled.a`
+    font-size: 24px;
     display: inline-block;
     text-decoration: none;
     color: #CCBAA1;
     padding-left: 40px;
     padding-right: 40px;
-    font-family: "Baloo 2";
+    font-family: "Lato";
     line-height: 3;
 `;
 
@@ -84,7 +85,7 @@ export const button = styled.button`
     font-size: 16px;
     margin: 16px;
     border-radius: 8px;
-    font-family: "Baloo 2";
+    font-family: "Lato";
     height: 40px;
     line-height: 0.3;
 `;
