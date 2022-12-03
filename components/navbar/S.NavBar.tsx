@@ -2,16 +2,20 @@ import styled from "styled-components";
 
 export const Container = styled.div``;
 
+export const width100 = styled.div`
+    width: 100%;
+`;
+
 export const navbar_main = styled.div`
     width: 100%;
     height: 70px;
     background: #FFF;
-    position: relative;
-    align-items: center;
-    justify-content: right;
+    justify-content: left;
     font-family: "Baloo 2";
     overflow: hidden;
-    float: left;
+    display: flex;
+    flex-d\re
+    align-items: flex-start;
 `;
 
 export const navbar = styled.div`
@@ -25,16 +29,17 @@ export const navbar = styled.div`
     font-family: "Lato";
 `;
 
-export const width100 = styled.div`
-    width: 100%;
-`;
-
 export const linksContainer = styled.div`
     float: left;
     margin-right: 20px;
     display: flex;
-    width: 300px;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // align-content: space-between;
+    align-items: center;
+    // width: 300px;
+    // justify-content: space-evenly;
+    
 `;
 
 export const Links = styled.a`
@@ -66,12 +71,20 @@ export const link_ushop = styled.a`
     padding-right: 40px;
     font-family: "Baloo 2";
     line-height: 3;
+
+    display:flex;
+    align-items: center;
+    justify-content:center;
 `;
 
 export const buttonsContainer = styled.div`
-    float: right;
+    margin-left: auto;
     justify-content: right;
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   
 `;
 
 export const button = styled.button`
