@@ -1,20 +1,18 @@
+import Button from '@components/button/Button'
 import { useState } from 'react'
-// import * as S from './S.Filter'
+import * as S from './S.FilterPriceRange'
 
-interface FilterPriceRangeProps {
-  filterName: String
-  filterCategory: {
-    attribute: number | string
-    label: string
-    checked: boolean
-  }[]
-}
+const FilterPriceRange = () => {
+  const handleInput = () => {}
 
-const FilterPriceRange: React.FC<FilterPriceRangeProps> = ({
-  filterName,
-  filterCategory,
-}) => {
-  return <p>dsada</p>
+  return (
+    <S.PriceRangeContainer>
+      <S.styledInput onChange={() => handleInput}></S.styledInput>
+      to
+      <S.styledInput onChange={() => handleInput}></S.styledInput>
+      <Button></Button>
+    </S.PriceRangeContainer>
+  )
 }
 
 export default FilterPriceRange
