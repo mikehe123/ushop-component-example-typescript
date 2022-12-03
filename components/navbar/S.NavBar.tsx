@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import NImage from "next/image";
 
 export const Container = styled.div``;
 
@@ -46,8 +47,8 @@ export const Links = styled.a`
     display: inline-block;
     text-decoration: none;
     color: white;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
     line-height: 4;
 `;
 
@@ -102,3 +103,12 @@ export const button = styled.button`
     height: 40px;
     line-height: 0.3;
 `;
+
+export const search = styled.input`
+    font-family: "Lato";
+    width: 615px;
+    height: 37px;
+    border-radius: 5px;
+
+`
+export const Image = styled(NImage)``;
