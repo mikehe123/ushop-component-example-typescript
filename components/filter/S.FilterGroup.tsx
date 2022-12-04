@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
-export const Container = styled.div``
+export const Container = styled.div`
+  /* background-color: #e8dccc; */
+`
 
 export const Title = styled.div`
   font-family: 'Baloo 2';
@@ -13,6 +15,8 @@ export const Title = styled.div`
 
 export const FilterGroupContainer = styled.div`
   padding: 30px;
+  width: 300px;
+  background-color: #e8dccc;
 `
 
 export const SearchPagePlaceholder = styled.div`

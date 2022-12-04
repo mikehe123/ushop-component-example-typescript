@@ -1,5 +1,9 @@
 import { useState } from 'react'
 import * as S from './S.Filter'
+import ArrowLeft from '@asset/icons/listing-shift-left.svg'
+// import Checkbox from './Checkbox'
+import Checkbox from '@components/checkbox/Checkbox'
+import Button from '@components/button/Button'
 
 interface FilterProps {
   filterName: String
@@ -8,9 +12,18 @@ interface FilterProps {
     label: string
     checked: boolean
   }[]
+  children?: React.ReactNode
+  onClick: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
+  checkbox: 'click' | 'hover' | 'unclicked'
 }
 
-const Filter: React.FC<FilterProps> = ({ filterName, filterCategory }) => {
+const Filter: React.FC<FilterProps> = ({
+  filterName,
+  filterCategory,
+  children,
+  onClick,
+  checkbox,
+}) => {
   const [filtersState, setFiltersState] = useState(filterCategory)
   const [toggle, setToggle] = useState(true)
 
@@ -19,10 +32,12 @@ const Filter: React.FC<FilterProps> = ({ filterName, filterCategory }) => {
     setFiltersState([...filtersState])
   }
 
-  const displayFilter = () => {
-    {
-    }
+  const changeBackground = (e: {
+    target: { style: { background: string } }
+  }) => {
+    e.target.style.background = 'red'
   }
+
   return (
     <S.Filter>
       <S.Line />
@@ -35,19 +50,16 @@ const Filter: React.FC<FilterProps> = ({ filterName, filterCategory }) => {
       {toggle &&
         filtersState.map(({ checked, label }, index) => (
           <S.CheckboxContainer>
-            {/* <input type='checkbox' /> */}
-
-            <S.styledInput
+            <Checkbox
               key={index + label}
-              type='checkbox'
-              defaultChecked={filtersState[index].checked}
-              onClick={() => {
-                handleCheck(index)
-              }}
+              toggleCheck={checked}
+              onClick={() => handleCheck(index)}
             />
+
             {filtersState[index].label}
           </S.CheckboxContainer>
         ))}
+      {children}
     </S.Filter>
   )
 }

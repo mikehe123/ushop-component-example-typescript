@@ -1,4 +1,5 @@
 import Filter from './Filter'
+import FilterPriceRange from './FilterPriceRange'
 import * as S from './S.FilterGroup'
 
 const FilterGroup = () => {
@@ -7,7 +8,10 @@ const FilterGroup = () => {
       {/* <S.FilterG> */}
       <S.FilterGroupContainer>
         <S.Title>Filters</S.Title>
-        <Filter filterName='Price' filterCategory={priceFilter} />
+        {/* <Filter filterName='Price' filterCategory={priceFilter} /> */}
+        <Filter filterName='Price' filterCategory={priceFilter}>
+          <FilterPriceRange></FilterPriceRange>
+        </Filter>
         <Filter filterName='Condition' filterCategory={conditionFilter} />
         <Filter filterName='Status' filterCategory={statusFilter} />
         <Filter filterName='Delivery' filterCategory={deliveryFilter} />
