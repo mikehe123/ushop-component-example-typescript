@@ -6,6 +6,8 @@ interface SectionProps {
   links?: string[];
 }
 
+
+
 const Footer: React.FC = () => {
   return (
     <S.Container>

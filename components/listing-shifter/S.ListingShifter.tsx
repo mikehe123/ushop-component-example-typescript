@@ -13,6 +13,6 @@ export const Container = styled.div<{ direction: string }>`
 `;
 
 export const Image = styled(NImage)<{ direction: string }>`
-  transform: ${({ direction }) =>
-    direction === "left" ? "rotate(0deg)" : "rotate(180deg)"};
+transform: ${({ direction }) =>
+direction === "left" ? "rotate(0deg)" : "rotate(180deg)"};
 `;
