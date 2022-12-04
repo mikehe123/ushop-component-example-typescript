@@ -109,6 +109,8 @@ export const search = styled.input`
     width: 615px;
     height: 37px;
     border-radius: 5px;
+    border: 1px solid #C5C5C5;
+    margin-right: 70px;
 
 `
 export const Image = styled(NImage)``;
